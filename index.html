@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+    <div class="hero">
+      <video  autoplay loop muted plays-inline class="back-video">
+        <source src="videoplayback.mp4" type="video/webm">
+      </video>
+      <div class="content">
+        <h1>Still with you</h1>
+        <br>
+
+        <marquee behavior="scroll" direction="up" scrollamount="1" align="center" width="35%" height="100px" style="font-color:white;">
+          [방탄소년단의 정국 "Still With You" 가사]<br><br><br>
+
+
+날 스치는 그대의 옅은 그 목소리<br><br><br>
+내 이름을 한 번만 더 불러주세요<br><br><br>
+ 얼어버린 노을 아래 멈춰 서있지만 <br><br><br>
+그대 향해 한 걸음씩 걸어갈래요<br><br><br>
+Still with you<br><br><br>
+
+
+어두운 방 조명 하나 없이<br><br><br>
+익숙해지면 안 되는데<br><br><br>
+그게 또 익숙해<br><br><br>
+나지막이 들리는<br><br><br>
+이 에어컨 소리<br><br><br>
+이거라도 없으면<br><br><br>
+나 정말 무너질 것 같아<br><br><br>
+
+
+함께 웃고 함께 울고<br><br><br>
+이 단순한 감정들이<br><br><br>
+내겐 전부였나 봐<br><br><br>
+언제쯤일까<br><br><br>
+다시 그댈 마주한다면?<br><br><br>
+눈을 보고 말할래요<br><br><br>
+보고 싶었어요<br><br><br>
+
+
+황홀했던 기억 속에<br><br><br>
+나 홀로 춤을 춰도 비가 내리잖아<br><br><br>
+이 안개가 걷힐 때쯤<br><br><br>
+젖은 발로 달려갈게<br><br><br>
+그때 날 안아줘<br><br><br>
+
+
+저 달이 외로워 보여서<br><br><br>
+밤하늘에 환하게 울고 있는 것 같아서<br><br><br>
+언젠가 아침이 오는 걸 알면서도<br><br><br>
+별처럼 너의 하늘에 머물고 싶었어<br><br><br>
+
+
+하루를 그 순간을<br><br><br>
+이렇게 될 걸 알았다면<br><br><br>
+더 담아뒀을 텐데<br><br><br>
+언제쯤일까<br><br><br>
+다시 그댈 마주한다면<br><br><br>
+눈을 보고 말할래요<br><br><br>
+보고 싶었어요<br><br><br>
+
+황홀했던 기억 속에<br><br><br>
+나 홀로 춤을 춰도 비가 내리잖아<br><br><br>
+이 안개가 걷힐 때쯤<br><br><br>
+젖은 발로 달려갈게<br><br><br>
+그때 날 잡아줘<br><br><br>
+
+
+날 바라보는 희미한 미소 뒤편에<br><br><br>
+아름다운 보랏빛을 그려볼래요<br><br><br>
+서로 발걸음이 안 맞을 수도 있지만<br><br><br>
+그대와 함께 이 길을 걷고 싶어요<br><br><br>
+Still with you<br><br><br>
+        </marquee>
+
+        <br>
+
+
+        <img src="play.png"height="40px" id="icon">
+
+        <audio id="mysong">
+        <source src="still with you jk.mp3" type="audio/mpeg">
+    </audio>
+
+          <a href="https://github.com/bhushanthapa" target="_blank">Explore</a>
+      </div>
+
+    </div>
+    <script>
+
+            var mysong = document.getElementById("mysong");
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                if(mysong.paused){
+                    mysong.play();
+                    icon.src = "pause.png";
+                }else{
+                    mysong.pause();
+                    icon.src = "play.png";
+                }
+            }
+
+        </script>
+
+  </body>
+</html>
